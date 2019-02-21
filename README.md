@@ -18,3 +18,11 @@ To run
 ```
 node bin/www
 ```
+
+### Unit Test
+
+To check
+
+```
+node test
+```
