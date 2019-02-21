@@ -7,7 +7,7 @@ async function contactSearch(search,page) {
  	return data;
 }
 
-async function saveContact(name,email,mobile) {
+async function saveNewContact(name,email,mobile) {
  let data= await contactDAL.saveNewContact(name,email,mobile)
  return data;
 }
@@ -21,6 +21,6 @@ async function deleteContact(id){
 }
 
 exports.contactSearch=contactSearch;
-exports.saveContact=saveContact;
+exports.saveNewContact=saveNewContact;
 exports.editContact=editContact;
 exports.deleteContact=deleteContact;

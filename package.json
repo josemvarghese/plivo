@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "mocha components/**/*.spec.js"
   },
   "dependencies": {
     "async": "^2.6.2",
@@ -22,5 +23,9 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "sinon": "^7.2.4"
   }
 }
