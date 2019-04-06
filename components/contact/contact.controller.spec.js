@@ -29,12 +29,12 @@ describe('saveContact', function(){
 		sinon.restore();
 	});
 	let error ='server error';
-  it('should save new user information', async()=>{
-
-  	sinon.stub(contactService, 'saveNewContact');
+  it.only('should save new user information', async()=>{
+  	let response = {message:"contact created successfully"}
+  	sinon.stub(contactService, 'saveNewContact').resolves(response);
   	await contactController.saveContact(req,res,next);
   	status.calledWith(200).should.be.ok;
-	json.calledWith({message:"contact created successfully"}).should.be.ok;
+	json.calledWith(response).should.be.ok;
       
   });
    it('should not save new user information', async()=>{

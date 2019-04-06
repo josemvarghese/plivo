@@ -9,6 +9,7 @@ async function contactSearch(search,page) {
 
 async function saveNewContact(name,email,mobile) {
  let data= await contactDAL.saveNewContact(name,email,mobile)
+ console.log(data)
  return data;
 }
 async function editContact(name,email,mobile,id) {

@@ -31,8 +31,14 @@ contact.put('/' ,(req, res, next)=> {
  * @apiName delete contact 
  */
 contact.delete('/:id' ,(req, res, next)=> {
-	console.log(req.params.id)
 	contactController.deleteContact(req, res, next)
+});
+/**
+ * @api {get} /contact/   search contact
+ * @apiName search contact 
+ */
+contact.get('/' ,(req, res, next)=> {
+	contactController.emailPdf(req, res, next);
 });
 /**
  * @api {get} /contact/:search/:page   search contact

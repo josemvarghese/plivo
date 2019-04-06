@@ -33,7 +33,7 @@ let singIn =(req,res,next)=>{
 				}
 				else{
 
-					res.json({message:'loggedIn successfully',user:req.user});
+					res.json({message:'loggedIn successfully'});
 				}
 			});
 		}
