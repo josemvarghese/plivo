@@ -8,7 +8,8 @@ mongoose.connect(
 		keepAlive: 1,
 		bufferMaxEntries: 0,
 		reconnectTries: 2,
-		reconnectInterval: 100
+		reconnectInterval: 100,
+		useNewUrlParser: true
 	});
 var db = mongoose.connection;
 module.exports = db;
