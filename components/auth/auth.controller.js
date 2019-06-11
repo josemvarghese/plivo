@@ -8,7 +8,7 @@ let saveUser = async(req,res,next)=>{
 	try{ 
 		let data = await authService.saveNewUser(req.body.email,req.body.password);
 		if(data.userExists){
-			res.status(400).json({message:"user already exists"})
+			res.status(400).json({message:"user already  alreday exists"})
 		}
 		else{
 			res.status(200).json({message:"user created successfully"})
