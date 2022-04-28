@@ -7,7 +7,7 @@
     "test": "mocha components/**/*.spec.js"
   },
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.4",
     "await": "^0.2.6",
     "bcrypt": "^3.0.4",
     "bcrypt-nodejs": "0.0.3",
